@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code-Generator</title>
+    <link rel="icon" type="image/ico" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="title">
+      <h1>TEXT TO <span id="qr">QR GENERATOR</span></h1>
+    </div>
+    <div class="instruction">
+      <ul>
+        <li>
+          Input the text in text box below.
+        </li>
+        <li>
+          Click the submit button.
+        </li>
+        <li>
+          Your QR will appear shortly depending on size of input (Internet Connection required).
+        </li>
+      </ul>
+    </div>
+    <div class="io">
+      <div class="ip-op">
+        <textarea id="input-text" placeholder="Enter your text here"></textarea>
+        <button id="submit-button" type="submit">Submit</button>
+      </div>
+      <div class="ip-op">
+        <img id="img" src="./public/android-chrome-512x512.png" alt="QR image">
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <script type="module" src="index.js"></script>
+  </body>
+</html>
